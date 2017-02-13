@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <string.h>
 
 struct _Node_{
 
@@ -20,7 +21,7 @@ struct _hashTable_{
 typedef struct _Node_ _Node_;
 typedef struct _hashTable_ _hashTable_;
 
-_hashTable_ newHashTable(uint8_t size);
+_hashTable_* newHashTable(uint8_t size);
 uint8_t findHashTable(_hashTable_ *hTable,char *key);
 _hashTable_* insertElement(_hashTable_ *hTable,char *element);
 
