@@ -25,6 +25,11 @@ int main(){
 
 	displayList(nodeDetails);
 
+	nodeDetails = reverseList(nodeDetails);
+
+	printf("ReverseList:\n");
+	displayList(nodeDetails);
+
 	nodeDetails = deleteNode(nodeDetails,50);
 
 	displayList(nodeDetails);
@@ -53,6 +58,10 @@ int main(){
 	displayList(nodeDetails);
 
 	printf("NumberOfNodes:%d\nListStatus:%d\n",nodeDetails->numberOfNodes,nodeDetails->listStatus );
+
+	nodeDetails = reverseList(nodeDetails);
+
+	displayList(nodeDetails);
 
 	free(nodeDetails);
 }

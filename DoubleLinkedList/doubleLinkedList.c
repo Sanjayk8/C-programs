@@ -38,6 +38,8 @@ _Node_Details_* addToHead(_Node_Details_ *nodeDetails, _Node_ *newNode){
 	nodeDetails->headNode = newNode;
 	nodeDetails->headNode->nextNode = tempNode;
 
+	tempNode->prevNode = nodeDetails->headNode;
+
 	nodeDetails->numberOfNodes += 1;
 
 	/*  Update the structure if the list is full */
